@@ -133,10 +133,10 @@ class ScrollPages {
        });
        this.navDots[this.currentPageNumber-1].classList.add('dot-active');
    }
-
+   
    resize() {
        this.viewHeight = document.documentElement.clientHeight;
-       this.pages.style.height = '100vh' ;
+       this.pages.style.height = this.viewHeight + 'px';
        this.pages.style.top = -this.viewHeight * (this.currentPageNumber-1) + 'px';
    }
    textFadeInOut() {
