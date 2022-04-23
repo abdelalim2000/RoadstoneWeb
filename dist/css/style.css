@@ -197,6 +197,20 @@ input:-webkit-autofill:active {
   display: none;
 }
 
+body::-webkit-scrollbar-track {
+  background-color: #F5F5F7;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #1C1B24;
+}
+
+body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px #1C1B24;
+  background-color: #1C1B24;
+}
+
 .px-7 {
   padding-right: 5rem;
   padding-left: 5rem;
@@ -383,6 +397,9 @@ input:-webkit-autofill:active {
   .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .nav-item .nav-link {
     font-size: 17px;
   }
+}
+.nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .nav-item .nav-link::focus, .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .nav-item .nav-link::active {
+  color: #FFFFFF !important;
 }
 .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item {
   position: relative;
@@ -610,6 +627,7 @@ input:-webkit-autofill:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  color: inherit;
   cursor: pointer;
   bottom: 0;
   left: 50%;
@@ -1195,19 +1213,18 @@ body {
   position: relative;
   top: 0;
   transition: all 800ms ease;
+  height: 100vh !important;
   /* height set by js */
 }
 
 .page {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
 }
 
 .text-container {
   position: relative;
-  top: 50%;
   visibility: visible;
-  transform: translateY(-50%);
   transition: all 1s ease;
 }
 
@@ -1245,13 +1262,13 @@ body {
 .nav-dot span:hover {
   width: 12px;
   height: 12px;
-  background-color: #ED1C24;
+  background-color: #000000;
 }
 
 .nav-dot.dot-active span {
   width: 12px;
   height: 12px;
-  background-color: #ED1C24;
+  background-color: #000000;
 }
 
 .retailers .retailers-heading {

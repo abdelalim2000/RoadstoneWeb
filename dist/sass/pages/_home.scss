@@ -35,19 +35,20 @@ body{
     position:relative;
     top:0;
     transition:all 800ms ease;
+    height: 100vh !important;
     /* height set by js */
 }
-.page{
-    height:100%;
+.page {
+    min-height: 100vh;
     width:100%;
 }
 
 .text-container{
     position:relative;
-    top:50%;
+   //  top:50%;
    //  opacity:0;
+   //  transform:translateY(-50%);
     visibility:visible;
-    transform:translateY(-50%);
     transition:all 1s ease;
 }
 .text-container.in-sight{
@@ -82,12 +83,12 @@ body{
     width:12px;
     height:12px;
    //  border: 2px solid #000000a1;
-   background-color: $mainColor;
+   background-color: $blackColor;
 }
 .nav-dot.dot-active span{
     width:12px;
     height:12px;
-    background-color: $mainColor;
+    background-color: $blackColor;
    //  border: 2px solid #000000a1;
 }
 
