@@ -1211,6 +1211,11 @@ body {
   transition: all 1s ease;
 }
 
+.text-container.in-sight {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav-dot-container {
   position: fixed;
   top: 50%;
