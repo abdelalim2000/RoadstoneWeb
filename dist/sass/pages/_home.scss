@@ -1,0 +1,283 @@
+// @media (prefers-reduced-motion) {
+//    body, html {
+//       scroll-behavior: initial;
+//    }
+// }
+
+// body {
+   // position: relative;
+   // // overflow-y: hidden;
+   // scroll-behavior: smooth;
+   // scroll-snap-type: mandatory;
+   // scroll-snap-points-y: repeat(100vh);
+   // scroll-snap-type: y mandatory;
+// }
+
+// @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap');
+// .section {
+//    display: flex;
+//    width: 100%;
+//    height: 100vh;
+//    justify-content: center;
+//    align-items: center;
+//  }
+
+body{
+   //  width:100%;
+   min-height: 100vh !important;
+}
+.fullscreen-container{
+    overflow:hidden;
+   //  width:100%;
+   min-height: 100vh !important;
+}
+#all-pages{
+    position:relative;
+    top:0;
+    transition:all 800ms ease;
+    min-height: 100vh !important;
+    /* height set by js */
+
+    @media screen and (max-width: 500px) {
+      top:0 !important;
+      min-height: 100vh !important;
+    }
+}
+.page{
+   min-height: 100vh !important;
+
+}
+
+.text-container{
+    position:relative;
+   //  top:50%;
+   //  opacity:0;
+    visibility:visible;
+   //  transform:translateY(-50%);
+    transition:all 1s ease;
+    min-height: 100vh !important;
+}
+// .text-container.in-sight{
+//     opacity:1;
+//     visibility:visible;
+// }
+
+.nav-dot-container{
+    position:fixed;
+    top:50%;
+    left:5px;
+    width: 20px;
+    transform:translateY(-50%);
+}
+.nav-dot{
+    height:8px;
+    padding:15px 0px;
+    margin:auto;
+}
+.nav-dot span{
+    display:block;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:white;
+    transition:all .3s ease;
+    margin: auto;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 66%);
+}
+.nav-dot span:hover{
+    width:12px;
+    height:12px;
+   //  border: 2px solid #000000a1;
+   background-color: $mainColor;
+}
+.nav-dot.dot-active span{
+    width:12px;
+    height:12px;
+    background-color: $mainColor;
+   //  border: 2px solid #000000a1;
+}
+
+// .navbutton-container {
+//    position: relative;
+//    top: 0;
+//    bottom: 0;
+//    right: 0;
+//    left: 0;
+//    z-index: 110;
+//    // background: rgba(black, .4);
+//    .navbutton-grid {
+//       position: fixed;
+//       left: 1rem;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       display: grid;
+//       grid-gap: .5rem;
+//       .navbutton {
+//          width: 10px;
+//          height: 10px;
+//          border: 2px solid $blackColor;
+//          border-radius: 30px;
+//          cursor: pointer;
+//          pointer-events: all;
+//          position: relative;
+//          transition:  all .6s;
+//          // &::after {
+//          //    content: "";
+//          //    position: absolute;
+//          //    top: 0;
+//          //    bottom: 0;
+//          //    right: 0;
+//          //    left: 0;
+//          //    border-radius: 30px;
+//          //    width: 5px;
+//          //    height: 5px;
+//          //    border: 1px solid $primary-dark;
+//          //    transition:  all 1s;
+//          // }
+//          // &:hover {
+//          //    &::after {
+//          //       background-color: rgba(0, 0, 0, 0.644);
+//          //    }
+//          // }
+
+//          &:focus, &.active {
+
+//             background-color:  $primary-dark;
+//             // &::after {
+//             //    background-color: rgba(0, 0, 0, 0.644);
+//             // }
+//          }
+//       }
+//    }
+// }
+
+// .main-page {
+//    scroll-snap-type: y mandatory;
+//    overflow-y: scroll;
+//    scroll-behavior: smooth;
+//    height: 100vh;
+// }
+
+// .section {
+//    height: 100vh;
+//    scroll-snap-align: start
+
+// }
+
+
+
+// #tireAboutFooter__container {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: end;
+// }
+
+
+.retailers {
+   // position: relative;
+   // height: 100vh;
+   @media screen and (max-width: 374px ) {
+      // height: 115vh;
+   }
+   .retailers-heading {
+      color: #000000;
+   }
+   .retailersCity {
+      display: flex;
+      justify-content: center;
+      .city {
+         margin: 0 10px;
+         @include transisionElement(.5s background-image);
+      }
+      .same-dis {
+         margin-top: 45px;
+      }
+      .same-dis-ather {
+         margin-top: 70px;
+      }
+      .riyada {
+         background: url("../imgs/Riyada.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/riyadhover.png");
+         }
+     }
+      .jizan {
+         background: url("../imgs/jizan.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/jizanhover.png");
+         }
+      }
+      .gaddah {
+         background: url("../imgs/gaddah.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/gaddahhover.png");
+         }
+      }
+      .damam {
+         background: url("../imgs/damam.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/damamhover.png");
+         }
+       }
+      .khamis {
+         background: url("../imgs/khamis.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/khamishover.png");
+         }
+      }
+      .madina {
+         background: url("../imgs/madinad.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/madinahover.png");
+         }
+      }
+      .qassim {
+         background: url("../imgs/qassim.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/qassimhover.png");
+         }
+      }
+      .sakaka { background:
+          url("../imgs/sakaka.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/sakakahover.png");
+         }
+      }
+      .taif {
+         background: url("../imgs/taif.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/taifhover.png");
+         }
+      }
+   }
+}
+.about {
+   background-color: $whiteColor;
+   .about-heading {
+      color: $mainColor;
+      @media screen and (max-width: 374px ) {
+         font-size: 30px;
+      }
+   }
+   .about-desc {
+      font-size: 16px;
+      text-align: center;
+      color: #000000;
+      letter-spacing: 0.2px;
+
+      @media screen and (max-width: 374px ) {
+         padding: 0 5px;
+         font-size: $xSmallSize;
+      }
+   }
+}

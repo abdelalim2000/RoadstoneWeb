@@ -1,0 +1,113 @@
+.retailers-header {
+   .retailers-header-bg {
+      background: url("../imgs/bolg-header.png") bottom no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      @media screen and (max-width: 768.98px) {
+         min-height: 180px;
+      }
+   }
+}
+
+.retailers-main {
+   padding: 40px 0;
+   background-color:  $primary-dark;
+   border-bottom: 1px solid #93939391;
+   .retailers-container {
+      .breadcrumb {
+         .active {
+            color: $mute-color !important;
+         }
+      }
+      .retailers-content {
+         .retailers-heading {
+            padding: 0px 0 30PX;
+            @extend %font-color-transform;
+         }
+         .retailers-cities {
+            .retailersCity-content {
+               background-color: #3D3D3D;
+               padding: 12px;
+               border-radius: 10px;
+               cursor: pointer;
+               .city-img {
+                  width: 60px;
+                  height: 43px;
+                  object-fit: cover;
+                  border-radius: 10px;
+               }
+               .city-name {
+                  margin: 0 0 0 20px;
+                  text-transform: uppercase;
+                  @extend %font-color;
+               }
+               .btnFindStore-container {
+                  .findStore-link {
+                     @extend %link-style;
+                     .btn-findStore {
+                        color: $whiteColor;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                     }
+                     .btn-icon {
+                        max-width: 14px;
+                     }
+                  }
+               }
+            }
+            .city-link {
+               margin: 10px 18px;
+               &:hover {
+                  border-radius: 10px;
+                  box-shadow: 0px 0px 11px 0px hsla(358, 85%, 52%, 0.82);
+                  @include transisionElement(.5s box-shadow);
+               }
+            }
+            .nav-pills {
+               .active {
+                  @include transisionElement(.5s box-shadow);
+                  box-shadow: 0px 0px 11px 0px hsla(358, 85%, 52%, 0.82);
+                  border-radius: 10px;
+               }
+            }
+         }
+      }
+   }
+   .cities {
+      padding: 100px 0;
+      .cityBranch-content {
+         .city-title {
+           @extend %font-color-transform;
+         }
+         .city-branches {
+            padding-top: 30px;
+            .cityBranches-name {
+               padding: 4px 3px 12px;
+               .branch-name {
+                  text-transform: capitalize;
+                  @extend %font-color;
+               }
+               .branch-link {
+                  font-size: 16px;
+                  color: $mute-color;
+                  text-transform: capitalize;
+               }
+            }
+         }
+         .nav-pills  {
+            .nav-link.active,
+            .nav-pills .show>.nav-link {
+               background-color: transparent;
+               border-radius: 5px 40px 6px 30px;
+               box-shadow: 0px 0px 7px 0px #fbfbfbd4;
+               @include transisionElement(box-shadow .8s );
+            }
+         }
+      }
+   }
+   .city-location {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+   }
+}

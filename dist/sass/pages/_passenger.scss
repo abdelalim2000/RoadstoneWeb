@@ -1,0 +1,131 @@
+.passenger-header {
+   .header-passenger {
+      background: url("../imgs/passanger-img.png") no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      @media screen and (max-width: 768.98px) {
+         min-height: 180px;
+      }
+   }
+}
+.passenger-main {
+   padding: 30px 0;
+   .passenger-container {
+      background-color: $grayColor;
+      .breadcrumb {
+         .active {
+            color: $primary-dark !important
+         }
+      }
+      .pass-tires {
+         .about-heading {
+            font-size: $largSize;
+            font-weight: $black;
+            line-height: 40px;
+            color: $primary-dark;
+            text-transform: uppercase;
+         }
+         .pass-car {
+            padding: 40px 0;
+            @media screen and (max-width: 424.98px) {
+               padding: 30px 0;
+            }
+            .pass-car-tire {
+               padding: 35px 30px 15px;
+               border-radius: 15px;
+               background-color: $whiteColor;
+               transition: box-shadow .5s ease-in-out;
+               @media screen and (max-width: 424.98px) {
+                  padding: 18px 12px;
+               }
+               .img-fluid  {
+                  transition: transform .5s ease-in-out;
+               }
+               .bg-progress {
+
+                  &::before {
+                     content: "";
+                     height: 6px;
+                     width: 0;
+                     transition: all .8s ease;
+                  }
+               }
+               &:hover .img-fluid {
+                  transform: scale(1.04);
+
+               }
+               &:hover {
+                  box-shadow:-1px 3px 4px 0px #00000026 !important;
+               }
+               &:hover .bg-progress::before {
+                  background-color: $mainColor !important;
+                  width: 100%;
+               }
+               .sport-tire-content{
+                  .sport-tire-heading {
+                     font-size: 22px;
+                     margin: 20px 0 25px;
+                     color: $mainColor;
+                     @extend %font-transform;
+                     @media screen and (max-width: 424.98px) {
+                        font-size: 16px;
+                     }
+                  }
+               }
+            }
+            .sport-performance {
+               display: flex;
+               justify-content: space-between;
+               .sport-tire-item {
+                  .sport-tire-performance {
+                     font-size: $smallerSize;
+                     line-height: 17px;
+                     padding: 5px 0;
+                     color: $dark-gray;
+                     text-transform: capitalize;
+                  }
+               }
+               .progress-container {
+                  margin-bottom: 15px;
+                  .progress-heading {
+                     color: $blackColor;
+                     @extend %smallBoldFont-txtCapitalize;
+                  }
+                  .progress-content {
+                     height: 6px;
+                     width: 200px;
+                     border-radius: 0;
+                     background-color: #E5E6E8;
+                     @media screen and (max-width: 424.98px) {
+                        width: 157px;
+                     }
+                     .bg-progress {
+                        background-color: $dark-gray;
+                     }
+                  }
+               }
+               .sport-img {
+                  @media screen and (max-width: 500px) {
+                     max-width: 130px;
+                  }
+               }
+            }
+            .explore-more {
+               margin-top: 20px;
+               a {
+                  @extend %link-style;
+               }
+               .btn-explore {
+                  font-size: 16px;
+                  font-weight: $black;
+                  color: $mainColor;
+                  text-transform: uppercase;
+                  &:focus {
+                     box-shadow: none;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

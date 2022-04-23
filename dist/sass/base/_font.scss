@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../css/fonts/NotoSansKR-Light.otf");
+    font-weight: $light;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../css/fonts/NotoSansKR-Regular.otf");
+    font-weight:  $normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../css/fonts/NotoSansKR-Black.otf");
+    font-weight:  $black;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../css/fonts/NotoSansKR-Bold.otf");
+    font-weight:  $bold;
+    font-display: block;
+}

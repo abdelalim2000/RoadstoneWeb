@@ -1,0 +1,139 @@
+.breadcrumb {
+   .active {
+      color: $primary-dark !important
+   }
+}
+.sportUltra-main {
+   padding-top: 100px;
+   .products {
+      .products-performance {
+         padding-top: 40px;
+         .products-performance-content {
+            .products-heading {
+               font-size: $largSize;
+               line-height: 58px;
+               padding-top: 50px;
+               color: $mainColor;
+               @extend %font-transform;
+            }
+            .products-desc {
+               font-size: $xSmallSize;
+               color: $dark-gray;
+               line-height: 20px;
+               padding-top: 15px;
+               width: 491px;
+            }
+         }
+         .tire-features {
+            padding-top: 92px;
+            .tire-features-content {
+               width: 160px;
+               &:last-child {
+                  width: 167px
+               }
+               .tire-feature-heading {
+                  @extend %smallBoldFont-txtCapitalize;
+                  line-height: 17px;
+                  color: #181818;
+                  margin-bottom: 0;
+               }
+            }
+         }
+      }
+      .product-display {
+         .product-display-content {
+            width: 395px;
+            padding-bottom: 30px;
+            margin-left: auto;
+            background-color: $whiteColor;
+            border-radius: 20px;
+            .img-display {
+               max-width: 281px;
+            }
+         }
+         #thumbnails {
+            width: 395px;
+            margin-left: auto;
+            img {
+               width: 45px;
+               margin: 14px 20px 0;
+               transition: transform .5s ease-in-out;
+               cursor: pointer;
+               &:hover {
+                  transform: scale(1.08);
+               }
+            }
+         }
+      }
+      .per {
+         padding: 100px 0;
+         .per-features {
+            .per-features-contnet {
+               display: flex;
+               align-items: center;
+               padding-bottom: 60px;
+               .per-feature-heading {
+                  font-size: 18px;
+                  font-weight: $bold;
+                  line-height: 26px;
+                  color: #181818;
+                  padding-left: 40px;
+               }
+            }
+         }
+      }
+      .per-indicator {
+         background: $whiteColor;
+         padding: 90px;
+         .per-indicator-title {
+            font-size: $largSize;
+            font-weight: $black;
+            line-height: 58px;
+            color: #181818;
+         }
+         .per-indicator-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 0 0;
+            .per-indecator-heading {
+               min-width: 115px;
+               @extend %smallBoldFont-txtCapitalize;
+            }
+            .prog {
+               width: 220px;
+               .progress-bar {
+                  height: 10px;
+                  border-radius: 30px;
+                  background-color: $mainColor;
+               }
+            }
+         }
+      }
+   }
+   .product-sizes {
+      padding: 10px 0 100px;
+      .product-size-titel {
+         font-size: 40px;
+         font-weight: $black;
+         padding-bottom: 30px;
+      }
+      table {
+         text-align: center;
+         thead {
+            td {
+               background-color: $mainColor;
+               color: $grayColor;
+               font-size: 18px;
+               padding: 15px 0;
+            }
+         }
+         tbody {
+            td {
+               color: $primary-dark;
+               padding: 15px 0;
+               font-size: 19px;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,51 @@
+.guide-header {
+   .guide-header-bg {
+      background: url("../imgs/bolg-header.png") bottom no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      @media screen and (max-width: 768.98px) {
+         min-height: 180px;
+      }
+   }
+}
+.guide-main {
+   padding: 100px 0 80px;
+   background-color: $primary-dark;
+   border-bottom: 1px solid #93939391;
+   .breadcrumb {
+      .active {
+      color: $mute-color !important;
+      }
+   }
+   .our-recent-news {
+      .recent-news-heading {
+         @extend %font-color-transform;
+      }
+      .tire-size-blogs{
+         padding-top: 70px;
+         .tire-size-container {
+            .tire-size-details {
+               .tire-size-heading {
+                  @extend %tire-size-heading;
+               }
+               .tire-size-desc {
+                  @extend %tire-size-desc;
+                  padding-right: 62px;
+                }
+               .read-more {
+                  @extend %btn-more;
+                  line-height: 4;
+                  .more-tire {
+                     font-size: 16px;
+                     font-weight: $black;
+                     text-transform: uppercase;
+                  }
+               }
+            }
+         }
+      }
+      .btn-more {
+         @extend %load-more;
+      }
+   }
+}

@@ -1,0 +1,99 @@
+header {
+   .header-img {
+      background: url("../imgs/about-road.png") no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      @media screen and (max-width: 768.98px) {
+         min-height: 180px;
+      }
+   }
+}
+
+.about-main {
+   background-color: $primary-dark;
+   padding: 30px 0;
+   border-bottom: 1px solid #93939391;
+   .breadcrumb {
+      .active {
+         color: $mute-color !important;
+      }
+   }
+   .about-heading {
+      font-size: $largerSize;
+      line-height: 80px;
+      font-weight: $black;
+      color: $whiteColor;
+      text-transform: uppercase;
+      @media screen and (max-width: 767.98px) {
+         font-size: $largSize;
+         line-height: 40px;
+      }
+   }
+   .aricale-about {
+      .about-roadstone {
+         font-size: 32px;
+         font-weight: $bold;
+         line-height: 45px;
+         color: $primary-gray;
+         padding: 30px 0 40px 0;
+         width: 75%;
+         min-width: 75%;
+         @media screen and (max-width: 767.98px) {
+            font-size: 22px;
+            line-height: 32px;
+            width: 100%;
+            padding-bottom: 15px;
+         }
+      }
+   }
+   .artical-item {
+      .about-desc {
+         font-size: $xSmallSize;
+         line-height: 20px;
+         color: $mute-color;
+         width: 75%;
+         min-width: 75%;
+         @media screen and (max-width: 767.98px) {
+            width: 100%;
+         }
+      }
+
+   }
+   .about-container {
+      .roadstone-about {
+         padding: 50px 0;
+         justify-content: center;
+         @media screen and (max-width: 767.98px) {
+            padding: 5px 0;
+         }
+         .roadstone-about-desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media screen and (max-width: 767.98px) {
+               padding-top: 25px;
+            }
+         }
+         .about-heading-roadstone {
+            font-size: 32px;
+            font-weight: $black;
+            line-height: 40px;
+            color: $whiteColor;
+            text-transform: uppercase;
+            @media screen and (max-width: 424.98px) {
+               font-size: 24px;
+            }
+         }
+         .about-desc-roadstone {
+            font-size: $xSmallSize;
+            line-height: 20px;
+            color: $mute-color;
+            padding-right: 14px;
+            @media screen and (max-width: 424.98px) {
+               font-size: 14px;
+               padding: 10px 0;
+            }
+         }
+      }
+   }
+}

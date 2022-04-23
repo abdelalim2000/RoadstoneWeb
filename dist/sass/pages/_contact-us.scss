@@ -1,0 +1,50 @@
+.contactUS-header {
+   .contactUS-header-bg {
+      background: url("../imgs/contactUs-header.png") bottom no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      @media screen and (max-width: 768.98px) {
+         min-height: 180px;
+      }
+   }
+}
+  .contact-us {
+      background-color: $primary-dark;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #93939391;
+      .contactUs-container {
+         padding: 40px 0;
+         .breadcrumb {
+               .active {
+                  color: $mute-color !important;
+               }
+         }
+         .contactus-bg {
+               .contactUs-heading {
+                  padding: 10px 0 20PX;
+                  @extend %font-color-transform;
+               }
+               .contact-info {
+                  .contactInfo-heading {
+                     font-size: 22px;
+                     font-weight: $light;
+                     padding-bottom: 25px;
+                     color: $whiteColor;
+                     text-transform: capitalize;
+                  }
+               }
+         }
+      }
+      .text-message {
+         height: 120px;
+         font-size: 14px;
+         font-weight: $light;
+         border: 1px solid #F5F5F7;
+         background-color: $primary-dark;
+         color: $grayColor;
+         padding: 10px;
+         &:focus {
+            outline: none;
+         }
+      }
+   }

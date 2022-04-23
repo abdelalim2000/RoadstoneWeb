@@ -1,0 +1,310 @@
+// navbar
+.navbar {
+   font-weight: $light;
+   background-color: transparent;
+   .lang-link {
+      color: $grayColor;
+      font-size: $xSmallSize;
+      padding: 0 1px;
+      @extend %link-style;
+      &:hover,
+      &:active,
+      &:focus {
+         color: $mainColor;
+         @include transisionElement(.4s color)
+      }
+   }
+   .curved-line {
+      color: $grayColor
+   }
+   .lang-nav {
+      margin-right: 60px;
+      @media screen and (max-width: 490px) {
+         margin-right: 50px;
+      }
+   }
+   .navbar-brand-logo {
+      @media screen and (max-width: 414px) {
+         max-width: 132px;
+      }
+   }
+}
+.nav-container {
+   .menu-toggle {
+      .input-toggler{
+         display: none;
+      }
+      .menu-toggler{
+         position: fixed;
+         right: 5px;
+         top: 15px;
+         width:35px;
+         height: 35px;
+         z-index: 99999;
+         flex-direction:column;
+         cursor: pointer;
+         @extend %flex-element ;
+         .menu-toggler-line{
+            position: relative;
+            width: 68%;
+            height: 1.5px;
+            background: $whiteColor;
+            margin: 0 0 5px 0px;
+            @include transisionElement(all .4s ease-out)
+         }
+         .line-sp {
+            width: 50%;
+         }
+      }
+      .input-toggler {
+         &:checked ~ {
+            .menu-toggler {
+               .menu-toggler-line {
+                  width: 18px;
+                  top: 2px;
+                  @include transformElment(rotate(-45deg));
+                  &:nth-child(2) {
+                     display: none;
+                     width: 18px;
+                  }
+                  &:nth-child(3) {
+                     top: -5px;
+                     @include transformElment(rotate(45deg));
+                  }
+               }
+            }
+            .sidebar {
+               @include transformElment(translateX(0%));
+               opacity: 1;
+            }
+         }
+      }
+      .sidebar {
+         position: fixed;
+         top: 0;
+         right: 0;
+         z-index: 9999;
+         height: 100vh;
+         width: 100%;
+         background: $primary-dark;
+         opacity: 1;
+         @extend %flex-element;
+         @include transformElment(translateX(-100%));
+         @include transisionElement(all .6s ease-out);
+         .sidebar-menu {
+            max-width: 100%;
+            height: 100%;
+            @media screen and (min-width:767.98px ) {
+               display: flex;
+               align-items: center;
+               width: 95%;
+            }
+            .nav-menu-img {
+               img {
+                  object-fit: cover;
+                  max-width: 100%;
+                  height: 100%;
+               }
+            }
+            .menu-container {
+               height: 100vh;
+               align-items: center;
+               .sidebar-menu-content-item {
+                  .nav-item {
+                     .nav-link {
+                        @extend .menu-link-style;
+                        @extend %link-style;
+                        font-size: $meduiumSize;
+                        color: #cdcdcd;
+                        margin-bottom: 15px;
+                        display: inline-block;
+                        @include transisionElement(color 0.5s);
+                        @media screen and (max-width: 767.98px) {
+                           font-size: $smallSize;
+                        }
+                     }
+                  }
+                  .drowp-item {
+                     position: relative;
+                     width: 200px;
+                     cursor: pointer;
+                     &:hover .drowp-item-container{
+                        opacity: 1;
+                        visibility: visible
+                     }
+                     .drowp-item-container {
+                        position: absolute;
+                        top: -55px;
+                        left: 180px;
+                        width: 100%;
+                        opacity: 0;
+                        visibility: hidden;
+                        margin: 10px 0;
+                        @include transisionElement(all .5s ease-out);
+                        @media screen and (max-width: 767.98px) {
+                           left: 170px;
+                        }
+                        @media screen and (max-width: 375px) {
+                           font-size: $xSmallSize;
+                           flex-direction: column;
+                        }
+                        .tire-item,
+                        .city-item {
+                           margin: 10px 0;
+                           text-decoration: underline;
+                           .tire-link,
+                           .city-link {
+                              @extend %link-style;
+                              color: #cdcdcd;
+                              text-transform: uppercase;
+                              &:focus,
+                              &:hover {
+                                 color: $whiteColor;
+                              }
+                           }
+                        }
+                     }
+                  }
+                  @media screen and (max-width: 767.98px) {
+                     padding-top: 100px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   // nav side Right
+   .side-nav {
+      height: 100%;
+      width: 45px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 9999;
+      background-color:  $mainColor;
+      padding-top: 20px;
+      @media screen and (max-width: 768.98px) {
+         display: none;
+      }
+      .menu-icon-toggle {
+         background: url("../imgs/menutoggle.png") center/contain no-repeat;
+         padding: 12px;
+         margin-top: -5pxpx;
+      }
+      .side-nav-content {
+         position: absolute;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         .side-nav-item {
+            text-align: center;
+            writing-mode: vertical-rl;
+            @include transformElment(rotate(-180deg));
+            .side-nav-link {
+               color: $whiteColor;
+               font-size: 16px;
+               display: flex;
+               align-items: center;
+               .side-nav-link-title {
+                  line-height: 26px
+               }
+            }
+            .nearset-icon {
+               @include transformElment(rotate(180deg))
+            }
+         }
+         .hr-line {
+            opacity: 1;
+            width: 100%;
+         }
+      }
+      .contact {
+         position: absolute;
+         bottom: 15px;
+         right: 12px
+
+      }
+   }
+}
+.seeWord-container {
+   height: 100vh;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   &::before {
+      @extend %before;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      background-color: rgb(0 0 0 / 50%);
+   }
+   .video-roadstone {
+      object-fit: cover;
+      max-width: 100vw;
+      min-height: 100vh;
+   }
+   .see-word {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      color: $whiteColor;
+      .seeWord-heading {
+         font-size: $largerSize;
+         line-height: 80px;
+
+         @media screen and (max-width: 319.98px ) {
+            font-size: 29px;
+            line-height: 35px;
+         }
+
+         @media screen and (min-width: 320px ) and (max-width:575.98px){
+            font-size: 35px;
+            line-height: 38px;
+         }
+
+         @media screen and (min-width: 576px ) and (max-width: 767.98px) {
+            font-size: 50px;
+            line-height: 55px;
+         }
+
+         @media screen and (min-width: 768px ) and (max-width: 991.98px) {
+            font-size: 70px;
+            line-height: 75px;
+         }
+      }
+      .seeWorld-desc {
+         font: {
+            size: 15px;
+            weight: $light;
+            line-height: 20px;
+         }
+         color: $grayColor;
+         opacity: .9;
+         letter-spacing: .4px;
+
+         @media screen and (max-width: 425px ) {
+            font-size: $smallerSize;
+            line-height: 7px;
+            display: inline;
+         }
+
+      }
+   }
+}
+
+.link-active {
+   color: #cdcdcd;
+ }
+ /* Style the active class */
+ .active, .link-active:hover {
+   color: $whiteColor !important;
+ }
