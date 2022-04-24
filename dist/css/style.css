@@ -505,7 +505,6 @@ body {
 }
 
 .seeWord-container {
-  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1877,7 +1876,6 @@ header .header-img {
 
 .main-footer {
   background-color: #1C1B24;
-  padding: 11px 0;
 }
 .main-footer .container-fluid-edit {
   padding-right: var(--bs-gutter-x, 8rem);
