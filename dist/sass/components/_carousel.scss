@@ -3,9 +3,10 @@
    // min-height: 100vh;
    display: flex;
    align-items: center;
+   background-color: $grayColor;
    .passengerCar-heading {
       position: absolute;
-      z-index: -1;
+      // z-index: -1;
       font-size: 12vw;
       font-weight: $black;
       // max-width: 100%;

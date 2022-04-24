@@ -184,7 +184,6 @@
 }
 body {
   font-family: "NotoSansKR";
-  background-color: #F5F5F7;
   user-select: none;
 }
 
@@ -818,10 +817,10 @@ body::-webkit-scrollbar-thumb {
   max-width: 100%;
   display: flex;
   align-items: center;
+  background-color: #F5F5F7;
 }
 .passenger-car .passengerCar-heading {
   position: absolute;
-  z-index: -1;
   font-size: 12vw;
   font-weight: 900;
   height: 100%;
@@ -1200,6 +1199,9 @@ form .wrong-text {
   overflow: auto;
 }
 
+.retailers {
+  background-color: #F5F5F7;
+}
 .retailers .retailers-heading {
   color: #000000;
 }
