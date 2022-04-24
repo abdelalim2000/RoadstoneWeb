@@ -1175,6 +1175,10 @@ form .wrong-text {
   border: 2px solid #ED1C24;
 }
 
+.tireAboutFooter-container {
+  overflow-y: scroll !important;
+}
+
 .retailers .retailers-heading {
   color: #000000;
 }
