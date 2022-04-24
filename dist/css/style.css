@@ -911,12 +911,12 @@ body {
 }
 .owl-theme .owl-dots .owl-dot {
   position: relative;
-  top: -16px;
+  top: -16.5px;
   left: 0;
 }
 .owl-theme .owl-dots .owl-dot span {
   width: 50px;
-  height: 3px;
+  height: 2px;
   margin: 0;
   background-color: transparent;
   transition: 0.5s all ease;
