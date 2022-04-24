@@ -50,14 +50,12 @@
 
 // Variables definition
 let scrollTop = document.querySelector(".btn-back-up");
-
 //Function that scroll Top
 const btnScrollTop = () => {
    window.scrollTo({
       top: 0,
       behavior: "smooth",
    })
-   console.log('red');
 }
 scrollTop.addEventListener('click', btnScrollTop);
 
