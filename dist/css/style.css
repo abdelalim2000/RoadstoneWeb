@@ -996,6 +996,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #1C1B24;
   padding: 40px 0 10px;
 }
+@media screen and (max-width: 500px) {
+  .newLetter-Sign {
+    padding: 20px 0 10px;
+  }
+}
 .newLetter-Sign .newLetter-container .newLetter-heading {
   font-size: 22px;
   color: #FFFFFF;
@@ -1297,6 +1302,12 @@ form .wrong-text {
 
 .about {
   background-color: #FFFFFF;
+}
+@media screen and (max-width: 500px) {
+  .about {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
 }
 .about .about-heading {
   color: #ED1C24;
@@ -1933,7 +1944,7 @@ header .header-img {
 @media screen and (max-width: 374px) {
   .main-footer .menu-item,
 .main-footer .social-item {
-    padding: 7px 0;
+    padding: 0;
   }
 }
 .main-footer .menu-item .menu-link:hover,

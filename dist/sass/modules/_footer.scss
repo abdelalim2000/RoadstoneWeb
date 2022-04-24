@@ -1,9 +1,4 @@
 // main footer
-.footer-contnet {
-   @media screen and (max-width: 500px){
-      // margin-top: 70px;
-   }
-}
 .main-footer {
    background-color: $primary-dark;
    .container-fluid-edit {
@@ -29,7 +24,7 @@
    .menu-item,
    .social-item {
       @media screen and (max-width: 374px ) {
-         padding: 7px 0;
+         padding:  0;
       }
       .menu-link {
          @extend .menu-link-style;
