@@ -22,75 +22,75 @@
 //    align-items: center;
 //  }
 
-body{
-    width:100%;
-    height:100%;
-}
-.fullscreen-container{
-    overflow:hidden;
-   //  width:100%;
-    height:100%;
-}
-#all-pages{
-    position:relative;
-    top:0;
-    transition:all 800ms ease;
-    height: 100vh !important;
-    /* height set by js */
-}
-.page {
-    min-height: 100vh;
-    width:100%;
-}
+// body{
+//     width:100%;
+//     height:100%;
+// }
+// .fullscreen-container{
+//     overflow:hidden;
+//    //  width:100%;
+//     height:100%;
+// }
+// #all-pages{
+//     position:relative;
+//     top:0;
+//     transition:all 800ms ease;
+//     height: 100vh !important;
+//     /* height set by js */
+// }
+// .page {
+//     min-height: 100vh;
+//     width:100%;
+// }
 
-.text-container{
-    position:relative;
-   //  top:50%;
-   //  opacity:0;
-   //  transform:translateY(-50%);
-    visibility:visible;
-    transition:all 1s ease;
-}
-.text-container.in-sight{
-    opacity:1;
-    visibility:visible;
-}
+// .text-container{
+//     position:relative;
+//    //  top:50%;
+//    //  opacity:0;
+//    //  transform:translateY(-50%);
+//     visibility:visible;
+//     transition:all 1s ease;
+// }
+// .text-container.in-sight{
+//     opacity:1;
+//     visibility:visible;
+// }
 
-.nav-dot-container{
-    position:fixed;
-    top:50%;
-    left:5px;
-    width: 20px;
-    transform:translateY(-50%);
-}
-.nav-dot{
-    height:8px;
-    padding:15px 0px;
-    margin:auto;
-}
-.nav-dot span{
-    display:block;
-    width:9px;
-    height:9px;
-    border-radius:50%;
-    background:white;
-    transition:all .3s ease;
-    margin: auto;
-    cursor: pointer;
-    border: 2px solid hsl(0, 0%, 66%);
-}
-.nav-dot span:hover{
-    width:12px;
-    height:12px;
-   //  border: 2px solid #000000a1;
-   background-color: $blackColor;
-}
-.nav-dot.dot-active span{
-    width:12px;
-    height:12px;
-    background-color: $blackColor;
-   //  border: 2px solid #000000a1;
-}
+// .nav-dot-container{
+//     position:fixed;
+//     top:50%;
+//     left:5px;
+//     width: 20px;
+//     transform:translateY(-50%);
+// }
+// .nav-dot{
+//     height:8px;
+//     padding:15px 0px;
+//     margin:auto;
+// }
+// .nav-dot span{
+//     display:block;
+//     width:9px;
+//     height:9px;
+//     border-radius:50%;
+//     background:white;
+//     transition:all .3s ease;
+//     margin: auto;
+//     cursor: pointer;
+//     border: 2px solid hsl(0, 0%, 66%);
+// }
+// .nav-dot span:hover{
+//     width:12px;
+//     height:12px;
+//    //  border: 2px solid #000000a1;
+//    background-color: $blackColor;
+// }
+// .nav-dot.dot-active span{
+//     width:12px;
+//     height:12px;
+//     background-color: $blackColor;
+//    //  border: 2px solid #000000a1;
+// }
 
 // .navbutton-container {
 //    position: relative;
@@ -159,7 +159,12 @@ body{
 
 // }
 
-
+#section3 {
+   @media screen and (max-width: 500px) {
+      // min-height: 100vh !important;
+      // transform: translateY(-403%);
+   }
+}
 
 // #tireAboutFooter__container {
 //    display: flex;
@@ -167,6 +172,9 @@ body{
 //    justify-content: end;
 // }
 
+// .page {
+//    min-height: 100vh !important;
+// }
 
 .retailers {
    // position: relative;

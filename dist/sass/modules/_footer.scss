@@ -1,6 +1,10 @@
+.tireAboutFooter-container {
+   min-height: 100vh;
+}
 // main footer
 .main-footer {
    background-color: $primary-dark;
+   padding: 11px 0;
    .container-fluid-edit {
       padding-right: var(--bs-gutter-x,8rem);
       padding-left: var(--bs-gutter-x,3.75rem);

@@ -183,13 +183,3 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
-
-// Function that scroll down
-let scrollDown = document.querySelector(".scrollDown-link");
-const btnScrollBottom = () => {
-window.scrollTo({
-    top: document.body.clientHeight,
-    behavior: 'smooth'
-});
-}
-scrollDown.addEventListener('click', btnScrollBottom);
