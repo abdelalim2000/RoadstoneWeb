@@ -539,7 +539,7 @@ body::-webkit-scrollbar-thumb {
 .seeWord-container .video-roadstone {
   object-fit: cover;
   max-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
 .seeWord-container .see-word {
   position: absolute;
