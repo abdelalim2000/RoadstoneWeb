@@ -147,7 +147,7 @@
                         margin: 10px 0;
                         @include transisionElement(all .5s ease-out);
                         @media screen and (max-width: 767.98px) {
-                           left: 170px;
+                           right: 0;
                         }
                         @media screen and (max-width: 375px) {
                            font-size: $xSmallSize;
@@ -171,7 +171,7 @@
                      }
                   }
                   @media screen and (max-width: 767.98px) {
-                     padding-top: 100px;
+                     padding-top: 40px;
                   }
                }
             }
@@ -195,7 +195,7 @@
       .menu-icon-toggle {
          background: url("../imgs/menutoggle.png") center/contain no-repeat;
          padding: 12px;
-         margin-top: -5pxpx;
+         margin-top: -5px;
       }
       .side-nav-content {
          position: absolute;
