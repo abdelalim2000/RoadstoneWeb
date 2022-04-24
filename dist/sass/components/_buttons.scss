@@ -4,14 +4,12 @@
    @include transisionElement(.5s background);
    @extend %link-style;
    @extend %button-style ;
-
    &:hover {
       background-color: $mainColor;
       color: $whiteColor;
       border: 0;
    }
 }
-
 .scrollDown-link {
    position: absolute;
    min-height: 85px;
@@ -19,17 +17,18 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+   text-decoration: none;
    color: inherit;
    cursor: pointer;
    bottom: 0;
    left: 50%;
    transform: translate(-50%, -25%);
    .scroll-down {
-      @include transformElment(rotate(-90deg));
       font-size: $smallerSize;
       color: $whiteColor;
       opacity: 0.4;
       margin-bottom: 0;
+      @include transformElment(rotate(-90deg));
    }
    .scroll-down-icon {
       width: 21px;

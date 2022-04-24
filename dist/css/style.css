@@ -604,6 +604,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
   color: inherit;
   cursor: pointer;
   bottom: 0;
@@ -611,15 +612,15 @@ body {
   transform: translate(-50%, -25%);
 }
 .scrollDown-link .scroll-down {
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin-bottom: 0;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  font-size: 12px;
-  color: #FFFFFF;
-  opacity: 0.4;
-  margin-bottom: 0;
 }
 .scrollDown-link .scroll-down-icon {
   width: 21px;
@@ -915,10 +916,10 @@ body {
 }
 .owl-theme .owl-dots .owl-dot span {
   width: 50px;
-  height: 2px;
+  height: 3px;
   margin: 0;
   background-color: transparent;
-  transition: 1s all;
+  transition: 0.5s all ease;
 }
 
 .tire-size {
@@ -1176,7 +1177,7 @@ form .wrong-text {
 }
 
 .tireAboutFooter-container {
-  overflow-y: scroll !important;
+  overflow: auto;
 }
 
 .retailers .retailers-heading {
@@ -1196,7 +1197,8 @@ form .wrong-text {
 }
 @media screen and (max-width: 500px) {
   .retailers .retailersCity .city {
-    width: 85px;
+    width: 95px;
+    height: 280px;
   }
 }
 .retailers .retailersCity .same-dis {
@@ -1205,6 +1207,7 @@ form .wrong-text {
 @media screen and (max-width: 500px) {
   .retailers .retailersCity .same-dis {
     margin-top: 25px;
+    height: 280px;
   }
 }
 .retailers .retailersCity .same-dis-ather {

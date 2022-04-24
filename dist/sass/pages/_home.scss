@@ -169,7 +169,7 @@
 //    min-height: 100vh !important;
 // }
 .tireAboutFooter-container {
-   overflow-y: scroll !important;
+   overflow: auto;
 }
 
 .retailers {
@@ -184,13 +184,15 @@
          margin: 0 10px;
          @include transisionElement(.5s background-image);
          @media screen and (max-width: 500px) {
-            width: 85px;
+            width: 95px;
+            height: 280px;
          }
       }
       .same-dis {
          margin-top: 45px;
          @media screen and (max-width: 500px) {
-            margin-top: 25px
+            margin-top: 25px;
+            height: 280px;
          }
       }
       .same-dis-ather {
