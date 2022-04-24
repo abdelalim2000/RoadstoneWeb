@@ -1303,12 +1303,6 @@ form .wrong-text {
 .about {
   background-color: #FFFFFF;
 }
-@media screen and (max-width: 500px) {
-  .about {
-    font-size: 30px;
-    margin-bottom: 35px;
-  }
-}
 .about .about-heading {
   color: #ED1C24;
 }

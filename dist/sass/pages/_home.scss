@@ -269,10 +269,6 @@
 }
 .about {
    background-color: $whiteColor;
-   @media screen and (max-width: 500px ) {
-      font-size: 30px;
-      margin-bottom: 35px;
-   }
    .about-heading {
       color: $mainColor;
       @media screen and (max-width: 374px ) {
