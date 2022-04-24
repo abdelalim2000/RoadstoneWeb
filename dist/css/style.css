@@ -1191,11 +1191,26 @@ form .wrong-text {
   -ms-transition: 0.5s background-image;
   transition: 0.5s background-image;
 }
+@media screen and (max-width: 500px) {
+  .retailers .retailersCity .city {
+    width: 85px;
+  }
+}
 .retailers .retailersCity .same-dis {
   margin-top: 45px;
 }
+@media screen and (max-width: 500px) {
+  .retailers .retailersCity .same-dis {
+    margin-top: 25px;
+  }
+}
 .retailers .retailersCity .same-dis-ather {
   margin-top: 70px;
+}
+@media screen and (max-width: 500px) {
+  .retailers .retailersCity .same-dis-ather {
+    margin-top: 35px;
+  }
 }
 .retailers .retailersCity .riyada {
   background: url("../imgs/Riyada.png");
