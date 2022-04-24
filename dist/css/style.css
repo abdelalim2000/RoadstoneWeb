@@ -12,7 +12,6 @@
 .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item .drowp-item-container .city-item .tire-link,
 .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item .drowp-item-container .city-item .city-link, .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .nav-item .nav-link, .navbar .lang-link {
   text-decoration: none;
-  color: inherit;
 }
 .main-footer .global-footer .menu-link:focus, .main-footer .menu-item .menu-link:focus,
 .main-footer .social-item .menu-link:focus, .retailers-main .retailers-container .retailers-content .retailers-cities .retailersCity-content .btnFindStore-container .findStore-link:focus, .passenger-main .passenger-container .pass-tires .pass-car .explore-more a:focus, .modal-body .nav-tabs .nav-search:focus, .modal.show .modal-header .btn-modal-close:focus, .btn-back-up:focus, .btn-submit:focus, .btn-more:focus, .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item .drowp-item-container .tire-item .tire-link:focus,
@@ -23,7 +22,7 @@
 .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item .drowp-item-container .tire-item .city-link:hover,
 .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item .drowp-item-container .city-item .tire-link:hover,
 .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .drowp-item .drowp-item-container .city-item .city-link:hover, .nav-container .menu-toggle .sidebar .sidebar-menu .menu-container .sidebar-menu-content-item .nav-item .nav-link:hover, .navbar .lang-link:hover {
-  color: inherit;
+  color: #FFFFFF;
   box-shadow: none;
 }
 
