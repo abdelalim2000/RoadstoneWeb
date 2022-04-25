@@ -6,10 +6,10 @@
       &::before {
          content: "";
          position: absolute;
+         top: 0;
          height: 30px;
          width: 100%;
          background-color: $whiteColor;
-         top: 0;
       }
    }
    .newLetter-container {
