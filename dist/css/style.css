@@ -995,6 +995,17 @@ body::-webkit-scrollbar-thumb {
 .newLetter-Sign {
   background-color: #1C1B24;
   padding: 40px 0 10px;
+  position: relative;
+}
+@media screen and (max-width: 430px) {
+  .newLetter-Sign::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+  }
 }
 .newLetter-Sign .newLetter-container .newLetter-heading {
   font-size: 22px;
