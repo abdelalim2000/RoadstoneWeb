@@ -213,6 +213,11 @@ body::-webkit-scrollbar-thumb {
   padding-left: 5rem;
 }
 
+.py-6 {
+  padding-top: 3.4rem;
+  padding-bottom: 3.4rem;
+}
+
 .me-9 {
   margin-right: 13rem;
   width: 100%;
@@ -537,8 +542,8 @@ body::-webkit-scrollbar-thumb {
 }
 .seeWord-container .video-roadstone {
   object-fit: cover;
-  max-width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .seeWord-container .see-word {
   position: absolute;
@@ -679,7 +684,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 991.98px) {
   .btn-back-up {
-    margin-top: 9px;
+    margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -815,8 +820,6 @@ body::-webkit-scrollbar-thumb {
 
 .passenger-car {
   max-width: 100%;
-  display: flex;
-  align-items: center;
   background-color: #F5F5F7;
 }
 .passenger-car .passengerCar-heading {
@@ -901,7 +904,7 @@ body::-webkit-scrollbar-thumb {
 }
 .passenger-car .tire-img-content .tire-img {
   position: relative;
-  width: 532px;
+  width: 490px;
 }
 @media screen and (max-width: 374.98px) {
   .passenger-car .tire-img-content .tire-img {
@@ -1251,56 +1254,31 @@ form .wrong-text {
     margin-top: 35px;
   }
 }
-.retailers .retailersCity .riyada {
-  background: url("../imgs/Riyada.png");
-}
 .retailers .retailersCity .riyada:hover {
-  background: url("../imgs/riyadhover.png");
-}
-.retailers .retailersCity .jizan {
-  background: url("../imgs/jizan.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../imgs/Riyada.png") !important;
+  height: 52vh;
+  width: 17vh;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 .retailers .retailersCity .jizan:hover {
   background: url("../imgs/jizanhover.png");
 }
-.retailers .retailersCity .gaddah {
-  background: url("../imgs/gaddah.png");
-}
 .retailers .retailersCity .gaddah:hover {
   background: url("../imgs/gaddahhover.png");
-}
-.retailers .retailersCity .damam {
-  background: url("../imgs/damam.png");
 }
 .retailers .retailersCity .damam:hover {
   background: url("../imgs/damamhover.png");
 }
-.retailers .retailersCity .khamis {
-  background: url("../imgs/khamis.png");
-}
 .retailers .retailersCity .khamis:hover {
   background: url("../imgs/khamishover.png");
-}
-.retailers .retailersCity .madina {
-  background: url("../imgs/madinad.png");
-}
-.retailers .retailersCity .madina:hover {
-  background: url("../imgs/madinahover.png");
-}
-.retailers .retailersCity .qassim {
-  background: url("../imgs/qassim.png");
 }
 .retailers .retailersCity .qassim:hover {
   background: url("../imgs/qassimhover.png");
 }
-.retailers .retailersCity .sakaka {
-  background: url("../imgs/sakaka.png");
-}
 .retailers .retailersCity .sakaka:hover {
   background: url("../imgs/sakakahover.png");
-}
-.retailers .retailersCity .taif {
-  background: url("../imgs/taif.png");
 }
 .retailers .retailersCity .taif:hover {
   background: url("../imgs/taifhover.png");
@@ -1704,6 +1682,12 @@ header .header-img {
 }
 .guide-main .our-recent-news .tire-size-blogs {
   padding-top: 70px;
+}
+.guide-main .our-recent-news .tire-size-blogs .tire-size-container {
+  transition: transform 0.3s ease;
+}
+.guide-main .our-recent-news .tire-size-blogs .tire-size-container:hover {
+  transform: scale(1.04);
 }
 .guide-main .our-recent-news .tire-size-blogs .tire-size-container .tire-size-details .tire-size-desc {
   padding-right: 62px;

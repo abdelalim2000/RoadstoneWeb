@@ -1,8 +1,6 @@
 .passenger-car {
    max-width: 100%;
    // min-height: 100vh;
-   display: flex;
-   align-items: center;
    background-color: $grayColor;
    .passengerCar-heading {
       position: absolute;
@@ -74,7 +72,7 @@
       }
       .tire-img {
          position: relative;
-         width: 532px;
+         width: 490px;
          @media screen and (max-width: 374.98px){
             width: 280px;
             right: 25px;

@@ -371,10 +371,10 @@
             </a>
          </section>
          <section class="passenger-car">
-            <div class="container-fluid">
+            <div class="container-fluid d-flex flex-column justify-content-center h-100">
                <h2 class="passengerCar-heading">PASSANGER <span class="sub-heading-color">CAR</span></h2>
                <div id="wrap">
-                  <div class="passengerCar-content">
+                  <div class="passengerCar-content contentt">
                      <svg class="svg-line-desk" xmlns="http://www.w3.org/2000/svg" width="225.405" height="81.735" viewBox="0 0 225.405 81.735">
                         <g id="Group_176" data-name="Group 176" transform="translate(-419 -949.265)">
                         <path id="Path_481" data-name="Path 481" d="M13069.6,1037.867l48.658-72.6h169.148" transform="translate(-12643 -15)" fill="none" stroke="#ed1c24" stroke-width="2"/>
@@ -409,23 +409,49 @@
                </div>
             </div>
          </section>
-         <section class="retailers d-flex flex-column justify-content-center">
-            <div class="container">
+         <section class="retailers">
+            <div class="container py-6">
                <h2 class="section-main-heading retailers-heading pb-5">retailers</h2>
                <div class="retailersCity owl-carousel owl-theme">
-                  <div class="city riyada"></div>
-                  <div class="city jizan same-dis"></div>
-                  <div class="city gaddah same-dis-ather"></div>
-                  <div class="city damam"></div>
-                  <div class="city khamis same-dis-ather"></div>
-                  <div class="city madina same-dis"></div>
-                  <div class="city qassim"></div>
-                  <div class="city sakaka same-dis-ather"></div>
-                  <div class="city taif same-dis"></div>
+                  <div
+                     class="city riyada"
+                     style="background-image: url(./dist/imgs/Riyada.png)">
+                  </div>
+                  <div
+                     class="city jizan same-dis"
+                     style="background-image: url(./dist/imgs/jizan.png)">
+                  </div>
+                  <div
+                     class="city gaddah same-dis-ather"
+                     style="background-image: url(./dist/imgs/gaddah.png)">
+                  </div>
+                  <div
+                     class="city damam"
+                     style="background-image: url(./dist/imgs/damam.png)">
+                  </div>
+                  <div
+                     class="city khamis same-dis-ather"
+                     style="background-image: url(./dist/imgs/khamis.png)">
+                  </div>
+                  <div
+                     class="city madina same-dis"
+                     style="background-image: url(./dist/imgs/madinad.png)">
+                  </div>
+                  <div
+                     class="city qassim"
+                     style="background-image: url(./dist/imgs/qassim.png)">
+                  </div>
+                  <div
+                     class="city sakaka same-dis-ather"
+                     style="background-image: url(./dist/imgs/sakaka.png)">
+                  </div>
+                  <div class="city taif same-dis"
+                     style="background-image: url(./dist/imgs/taif.png)">
+                  </div>
                </div>
-            <a href="./retailers.html" class="d-block text-center">
-               <button type="button" class="btn btn-more-retailer btn-more">Explore More</button>
-            </a>
+               <a href="./retailers.html" class="d-block text-center">
+                  <button type="button" class="btn btn-more-retailer btn-more">Explore More</button>
+               </a>
             </div>
          </section>
          <section class="tireAboutFooter-container pt-5">
@@ -575,6 +601,7 @@
                      </div>
                   </div>
                </div>
+
             </div>
          </section>
       </main>
@@ -591,12 +618,28 @@
       <script src="./dist/js/javascript/full-page-scroll.min.js"></script>
       <script type="text/javascript">
          new fullScroll({
-           mainElement: "main",
-           displayDots: true,
-           dotsPosition: "left",
-           animateTime: 0.7,
-           animateFunction: "ease",
+            mainElement: "main",
+            displayDots: true,
+            dotsPosition: "left",
+            animateTime: 0.8,
+            animateFunction: "ease",
          });
-       </script>
+      </script>
+
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+      <script>
+         gsap.registerPlugin(ScrollTrigger);
+         let tl = gsap.timeline({
+            scrollTrigger: {
+               trigger: ".tire-img-content",
+               scrub:1,
+               markers: true,
+               start: 'top center',
+               end: 'bottom center',
+            }
+         });
+         tl.to('.tire-img-content', {rotation:45,duration:3,dealy: 0,ease: Linear.easeNone})
+      </script> -->
    </body>
 </html>

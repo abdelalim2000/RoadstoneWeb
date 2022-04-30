@@ -24,6 +24,10 @@
       .tire-size-blogs{
          padding-top: 70px;
          .tire-size-container {
+            transition: transform 0.3s ease;
+            &:hover {
+               transform: scale(1.04);
+            }
             .tire-size-details {
                .tire-size-heading {
                   @extend %tire-size-heading;

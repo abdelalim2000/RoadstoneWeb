@@ -1,21 +1,21 @@
-// //  animation tyre car
-// gsap.registerPlugin(ScrollTrigger);
-// // var rule = CSSRulePlugin.getRule(".passengerCar::after");
-// gsap.set('.anime-2', {
-// yPercent:15
-// // yPercent:20
-// });
+//  animation tyre car
+gsap.registerPlugin(ScrollTrigger);
+var rule = CSSRulePlugin.getRule(".passengerCar::after");
+gsap.set('.anime-2', {
+yPercent:15
+// yPercent:20
+});
 
-// var rotate = gsap.timeline({
-//     scrollTrigger:{
-//         trigger: "#wrap",
-//         scrub:1,
-//         start: 'top 60%',
-//         end: 'center 60%',
-//         // markers: true
-//         // pin: true,
-//     },
-// })
+var rotate = gsap.timeline({
+    scrollTrigger:{
+        trigger: "#wrap",
+        scrub:1,
+        start: 'bottom bottom',
+        end: 'top center',
+        markers: true
+        // pin: true,
+    },
+})
 
 // .to('#anime-2', {rotation:45,duration:3,dealy: 0,ease: Linear.easeNone})
 // .from('#anim-1', {x:240,opacity:0,duration: 3,dealy:2, ease: Linear.easeNone}, "-=4")
