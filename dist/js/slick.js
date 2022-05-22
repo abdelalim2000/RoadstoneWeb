@@ -4,11 +4,6 @@ $(function () {
        lazyLoad: true,
        smartSpeed: 800,
        slideTransition: 'linear',
-       // responsiveClass: true,
-       // autoplay: true,
-       // autoplayTimeout: 0,
-       // autoplayHoverPause: false,
-       // mouseDrag: true,
        dots: true,
        responsive: {
           0: {
@@ -21,20 +16,18 @@ $(function () {
              stagePadding: 10,
           },
           425: {
-             items: 4,
-             margin: 30,
+             items: 3,
           },
           768: {
-             items: 6,
+             items: 4,
           },
           1000: {
              items: 7
           },
-
-          1024: {
+          1200: {
              items: 9,
              dots: false,
-             margin: 30
+            //  margin: 30
           }
        }
     })
@@ -47,21 +40,15 @@ $(function () {
        smartSpeed: 800,
        slideTransition: 'linear',
        dots: false,
-
        responsive: {
           0: {
              items: 1,
-             // margin: 20,
-             //  stagePadding: 50,
           },
           600: {
              items: 2,
-             // stagePadding: 50,
-             // margin: 30,
           },
           1000: {
              items: 2,
-             // margin: 30,
           },
           1200: {
              items: 3
@@ -77,17 +64,12 @@ $(function () {
       responsive: {
          0: {
             items: 1,
-            // margin: 20,
-            //  stagePadding: 50,
          },
          600: {
             items: 3,
-            // stagePadding: 50,
-            // margin: 30,
          },
          1000: {
             items: 4,
-            // margin: 30,
          },
          1200: {
             items: 6,

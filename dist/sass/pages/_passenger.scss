@@ -8,10 +8,11 @@
       }
    }
 }
+
 .passenger-main {
    padding: 30px 0;
    .passenger-container {
-      background-color: $grayColor;
+      background-color: $gray-color;
       .breadcrumb {
          .active {
             color: $primary-dark !important
@@ -19,7 +20,7 @@
       }
       .pass-tires {
          .about-heading {
-            font-size: $largSize;
+            font-size: $primary-larg-size;
             font-weight: $black;
             line-height: 40px;
             color: $primary-dark;
@@ -33,7 +34,7 @@
             .pass-car-tire {
                padding: 35px 30px 15px;
                border-radius: 15px;
-               background-color: $whiteColor;
+               background-color: $white-color;
                transition: box-shadow .5s ease-in-out;
                @media screen and (max-width: 424.98px) {
                   padding: 18px 12px;
@@ -58,14 +59,14 @@
                   box-shadow:-1px 3px 4px 0px #00000026 !important;
                }
                &:hover .bg-progress::before {
-                  background-color: $mainColor !important;
+                  background-color: $main-color !important;
                   width: 100%;
                }
                .sport-tire-content{
                   .sport-tire-heading {
                      font-size: 22px;
                      margin: 20px 0 25px;
-                     color: $mainColor;
+                     color: $main-color;
                      @extend %font-transform;
                      @media screen and (max-width: 424.98px) {
                         font-size: 16px;
@@ -78,7 +79,7 @@
                justify-content: space-between;
                .sport-tire-item {
                   .sport-tire-performance {
-                     font-size: $smallerSize;
+                     font-size: $smaller-size;
                      line-height: 17px;
                      padding: 5px 0;
                      color: $dark-gray;
@@ -88,7 +89,7 @@
                .progress-container {
                   margin-bottom: 15px;
                   .progress-heading {
-                     color: $blackColor;
+                     color: $black-color;
                      @extend %smallBoldFont-txtCapitalize;
                   }
                   .progress-content {
@@ -118,7 +119,7 @@
                .btn-explore {
                   font-size: 16px;
                   font-weight: $black;
-                  color: $mainColor;
+                  color: $main-color;
                   text-transform: uppercase;
                   &:focus {
                      box-shadow: none;

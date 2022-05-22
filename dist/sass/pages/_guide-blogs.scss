@@ -39,6 +39,7 @@
                .read-more {
                   @extend %btn-more;
                   line-height: 4;
+                  position: relative;
                   .more-tire {
                      font-size: 16px;
                      font-weight: $black;
@@ -48,8 +49,25 @@
             }
          }
       }
-      .btn-more {
-         @extend %load-more;
+      .pagination{
+         .page-link {
+            background-color: $main-color;
+            border: 1px solid #f3f3f382;
+            color: $gray-color;
+            font-size: 17px;
+            &:active,&:focus {
+               background-color: #fFf;
+               color: $main-color;
+               box-shadow: none;
+            }
+            span {
+            }
+         }
+         .page-item.disabled {
+            span {
+               color: #b4b4b4;
+            }
+         }
       }
    }
 }

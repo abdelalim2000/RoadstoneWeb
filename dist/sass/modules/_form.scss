@@ -9,13 +9,13 @@
          top: 0;
          height: 30px;
          width: 100%;
-         background-color: $whiteColor;
+         background-color: $white-color;
       }
    }
    .newLetter-container {
       .newLetter-heading {
          font-size: 22px;
-         color: $whiteColor;
+         color: $white-color;
          font-weight: $black;
          letter-spacing: 0.5px;
          @media screen and (max-width: 991px ) {
@@ -37,28 +37,27 @@ form {
    .input-email,
    .input-area,
    .input-phone {
-      color: $grayColor;
+      color: $gray-color;
       background-color: $primary-dark;
-      font-size: $xSmallSize;
-      border: 1px solid $grayColor;
+      font-size: $xsmall-size;
+      border: 1px solid $gray-color;
       border-radius: 0;
       padding: 6px;
       &:focus {
          box-shadow: none;
-         color: $grayColor;
+         color: $gray-color;
          background-color: $primary-dark;
-         border-color:  $grayColor;
+         border-color:  $gray-color;
       }
    }
 
    .wrong-text {
-      color: $mainColor;
-      font-size: $smallerSize;
+      color: $main-color;
+      font-size: $smaller-size;
       font-weight: $normal;
       visibility: hidden;
    }
 }
-
 
 // FINDE TIRE
 .modal-open {
@@ -81,7 +80,7 @@ form {
             position: relative;
             height: 30px;
             width: 30px;
-            background: $whiteColor;
+            background: $white-color;
             opacity: 1;
             @extend %link-style;
             &:before,
@@ -96,7 +95,7 @@ form {
                margin-left: -13px;
                display: block;
                transform: rotate(-45deg);
-               background-color: $mainColor;
+               background-color: $main-color;
             }
             &:after {
                transform: rotate(-135deg);
@@ -127,14 +126,14 @@ form {
          @extend %link-style ;
          &.active {
             position: relative;
-            color: $mainColor !important;
+            color: $main-color !important;
             border-color: transparent;
             &::before {
                content: "";
                position: absolute;
                height: 3px;
                min-width: 8vw;
-               background-color: $mainColor;
+               background-color: $main-color;
                bottom: 0;
             }
          }
@@ -168,11 +167,11 @@ form {
          font-size: 14px;
       }
       .select2-results__option--highlighted[aria-selected] {
-         background-color: $mainColor;
+         background-color: $main-color;
       }
       .select2-results__option--highlighted[aria-selected=true],
       .select2-results__option[aria-selected=true] {
-         background-color: $grayColor;
+         background-color: $gray-color;
          color: $primary-dark;
       }
    }
@@ -207,8 +206,8 @@ form {
       text-transform: uppercase;
    }
    .btn-search {
-      background-color: $mainColor;
-      color: $whiteColor;
+      background-color: $main-color;
+      color: $white-color;
       font-size: 16px;
       font-weight: $bold;
       width: 130px;
@@ -224,7 +223,7 @@ form {
       padding: 3px;
    }
    .form-check-label.link-active.active {
-      border: 2px solid $mainColor
+      border: 2px solid $main-color
    }
 }
 

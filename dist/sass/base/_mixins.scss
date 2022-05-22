@@ -8,10 +8,6 @@
     background-color: rgba($color, $opacity);
 }
 
-.red-overlay {
-    @include overlay(black, 0.5 )
-}
-
 //therd mixin and uses
 @mixin transisionElement($tran) {
     -webkit-transition: $tran;
@@ -51,4 +47,8 @@
     -o-inset: $property;
     -ms-inset: $property;
     inset: $property;
+}
+
+.red-overlay {
+    @include overlay(black, 0.5 )
 }

@@ -1,59 +1,59 @@
 .blog-details-header {
-    .blog-details-header-bg {
-       background: url("../imgs/bolg-header.png") bottom no-repeat;
-       background-size: cover;
-       min-height: 300px;
-       @media screen and (max-width: 768.98px) {
-          min-height: 180px;
-       }
-    }
- }
+   .blog-details-header-bg {
+      background: url("../imgs/bolg-header.png") bottom no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      @media screen and (max-width: 768.98px) {
+         min-height: 180px;
+      }
+   }
+}
 .blog-details {
-     background-color: $primary-dark;
-     border-bottom: 1px solid #93939391;
-     padding-bottom: 80px;
-    .blog-details-container {
-        padding: 40px 0;
-        .breadcrumb {
-            .active {
-                color: $mute-color !important;
-            }
-        }
-        .blog-details-bg {
-            .blog-details-heading {
-                @extend %font-color-transform;
-            }
-            .product-size-markings {
-                padding-top: 50px;
-                .product-dispaly {
-                    min-height: 400px ;
-                    background-image: url("../imgs/tire-marking.png");
-                    background-size: cover;
-                    background-position: bottom;
-                }
-                article {
-                    padding: 20px 0;
-                    .product-data {
-                        font-size: $smallSize;
-                        color: $whiteColor;
-                        line-height: 38px
-                    }
-                    .product-data-heading {
-                        @extend %font-color-transform;
-                        margin: 15px 0 30px
-                    }
-                    .product-details {
-                        font-size: $xSmallSize;
-                        line-height: 20px;
-                        color: $mute-color;
-                        font-weight: $light;
-                    }
-                }
-            }
-        }
-        .btn-more {
-            @extend %load-more;
-            margin-top: 8px;
+   background-color: $primary-dark;
+   border-bottom: 1px solid #93939391;
+   padding-bottom: 80px;
+   .blog-details-container {
+      padding: 40px 0;
+      .breadcrumb {
+         .active {
+            color: $mute-color !important;
          }
-    }
+      }
+      .blog-details-bg {
+         .blog-details-heading {
+            @extend %font-color-transform;
+         }
+         .product-size-markings {
+               padding-top: 50px;
+               .product-dispaly {
+                  min-height: 400px ;
+                  background-image: url("../imgs/tire-marking.png");
+                  background-size: cover;
+                  background-position: bottom;
+               }
+               article {
+                  padding: 20px 0;
+                  .product-data {
+                     font-size: $small-size;
+                     color: $white-color;
+                     line-height: 38px
+                  }
+                  .product-data-heading {
+                     @extend %font-color-transform;
+                     margin: 15px 0 30px
+                  }
+                  .product-details {
+                     font-size: $xsmall-size;
+                     line-height: 20px;
+                     color: $mute-color;
+                     font-weight: $light;
+                  }
+               }
+         }
+      }
+      .btn-more {
+         @extend %load-more;
+         margin-top: 8px;
+      }
+   }
 }

@@ -1,9 +1,153 @@
+// start passenger-car
+.passenger-car {
+   max-width: 100%;
+   // min-height: 100vh;
+   background-color: $gray-color;
+   .passengerCar-heading {
+      position: absolute;
+      // z-index: -1;
+      font-size: 12vw;
+      font-weight: $black;
+      // max-width: 100%;
+      height: 100%;
+      color: $black-color;
+      @extend %flex-element ;
+      @media screen and (max-width: 374px ) {
+         font-size: 38px;
+         padding-top: 150px;
+      }
+   }
+   .passengerCar-content {
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width:768.98px){
+         flex-direction: column-reverse;
+         align-items: center;
+      }
+      @media screen and (min-width:769px) and (max-width:991px){
+         justify-content: end;
+         margin-right: 50px;
+      }
+   }
+   .svg-line-desk {
+      margin: 21px 25px 0px;
+      @media screen and (max-width: 769px) {
+         display: none;
+      }
+   }
+   .svg-line-res {
+      display: none;
+      text-align: center;
+      @media screen and (max-width: 768.98px) {
+         display: block;
+         margin-right: 45px;
+      }
+   }
+   .tire {
+      @media screen and (max-width: 768.98px) {
+         margin: auto;
+         text-align: center;
+      }
+   }
+   .tire-desc {
+      font-size: $xsmall-size;
+      line-height: 20px;
+      color:$black-color;
+      @media screen and (max-width: 424.95px) {
+         font-size: 13px;
+      }
+   }
+   .more-tire {
+      font-size: $xsmall-size;
+      line-height: 20px;
+      color: $main-color;
+      &:hover {
+         color: $main-color
+      }
+   }
+   .tire-img-content {
+      max-width: 60vw;
+      text-align: center;
+      @media screen and (min-width: 425px) and (max-width: 767.98px){
+         max-width: 80vw;
+      }
+      .tire-img {
+         position: relative;
+         width: 490px;
+         @media screen and (max-width: 374.98px){
+            width: 280px;
+            right: 25px;
+         }
+         @media screen and (min-width: 375px) and (max-width: 767.98px){
+            width: 300px;
+            right: 4px;
+         }
+      }
+   }
+}
+
+// start tire-size
+.tire-size {
+   background-color: $primary-dark;
+   .tire-bg {
+      position: relative;
+      width: 100%;
+      min-height: 220px;
+      filter: grayscale(1) invert(4%);
+      @include transisionElement(.4s);
+      &:hover,
+      &:hover::before{
+         filter: none;
+         background-color: rgba(208,0,0, 10%);
+         transform: scale(1.06);
+      }
+      &::before {
+        @extend %before ;
+         right: 0;
+         bottom: 0;
+         background-color: rgba(0,0,0,62%);
+      }
+      .tireSize-content {
+         position: absolute;
+         bottom: 0;
+         padding: 20px 17px;
+         .tireSize-heading {
+            @extend %tire-size-heading;
+         }
+         .tireSize-desc {
+           @extend %tire-size-desc;
+            @media screen and (min-width: 767.98px) {
+               padding-right: 80px;
+            }
+         }
+         img {
+            display: inline ;
+            width: 8px ;
+         }
+      }
+   }
+   .tire-bg-x {
+      background-repeat:  no-repeat;
+      background-size: cover;
+   }
+   .tire-bg-y {
+      background:url("../imgs/tire-markink2.png") no-repeat;
+      background-size: cover;
+   }
+   .tire-bg-z {
+      background:url("../imgs/tire-marking.png") no-repeat;
+      background-size: cover;
+   }
+}
+
+// start tireAboutFooter-container
 .tireAboutFooter-container {
    overflow: auto;
 }
 
+//start retailers
 .retailers {
-   background-color: $grayColor;
+   background-color: $gray-color;
    .retailers-heading {
       color: #000000;
    }
@@ -11,7 +155,7 @@
       display: flex;
       justify-content: center;
       .city {
-         margin: 0 10px;
+         margin: 0 auto;
          @include transisionElement(.5s background-image);
          @media screen and (max-width: 500px) {
             width: 95px;
@@ -19,83 +163,52 @@
          }
       }
       .same-dis {
-         margin-top: 45px;
+         margin: 45px auto;
          @media screen and (max-width: 500px) {
-            margin-top: 25px;
+            margin: 25px auto 0;
             height: 280px;
          }
       }
       .same-dis-ather {
-         margin-top: 70px;
+         margin: 70px auto 0;
          @media screen and (max-width: 500px) {
-            margin-top: 35px;
+            margin: 35px auto 0;
          }
       }
-      .riyada {
-         @extend .retail-prop;
-         &:hover {
-            background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url("../imgs/Riyada.png") !important;
-            height: 52vh;
-            width: 17vh;
-            background-size: cover !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
+      .city-content {
+         position: relative;
+         .city {
+            @extend .retail-prop;
+            box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+            @include transisionElement(all .5s);
          }
-     }
-      .jizan {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/jizanhover.png");
+         .city-name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFF;
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            @include transisionElement(all .5s);
          }
-      }
-      .gaddah {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/gaddahhover.png");
+         &:hover .city{
+            box-shadow: none;
          }
-      }
-      .damam {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/damamhover.png");
-         }
-       }
-      .khamis {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/khamishover.png");
-         }
-      }
-      .madina {
-         @extend .retail-prop;
-         &:hover {
-            // background: url("../imgs/madinahover.png");
-         }
-      }
-      .qassim {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/qassimhover.png");
-         }
-      }
-      .sakaka {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/sakakahover.png");
-         }
-      }
-      .taif {
-         @extend .retail-prop;
-         &:hover {
-            background: url("../imgs/taifhover.png");
+         &:hover .city-name {
+            opacity: 0;
          }
       }
    }
 }
+
+// start section about
 .about {
-   background-color: $whiteColor;
+   background-color: $white-color;
    .about-heading {
-      color: $mainColor;
+      color: $main-color;
       @media screen and (max-width: 374px ) {
          font-size: 30px;
       }
@@ -108,7 +221,7 @@
 
       @media screen and (max-width: 374px ) {
          padding: 0 5px;
-         font-size: $xSmallSize;
+         font-size: $xsmall-size;
       }
    }
 }

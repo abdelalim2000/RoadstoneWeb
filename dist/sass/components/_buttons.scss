@@ -1,15 +1,16 @@
 .btn-more {
-   border: 2px solid $whiteColor;
-   color: $whiteColor;
+   border: 2px solid $white-color;
+   color: $white-color;
    @include transisionElement(.5s background);
    @extend %link-style;
    @extend %button-style ;
    &:hover {
-      background-color: $mainColor;
-      color: $whiteColor;
+      background-color: $main-color;
+      color: $white-color;
       border: 0;
    }
 }
+
 .scrollDown-link {
    position: absolute;
    min-height: 85px;
@@ -24,8 +25,8 @@
    left: 50%;
    transform: translate(-50%, -25%);
    .scroll-down {
-      font-size: $smallerSize;
-      color: $whiteColor;
+      font-size: $smaller-size;
+      color: $white-color;
       opacity: 0.4;
       margin-bottom: 0;
       @include transformElment(rotate(-90deg));
@@ -42,8 +43,8 @@
    opacity: 100%;
    &:hover,
    &:focus {
-    color: $whiteColor;
-    background: $mainColor;
+    color: $white-color;
+    background: $main-color;
     border: 0;
    }
 }
@@ -51,15 +52,15 @@
 .read-more {
    @extend %btn-more;
    .more-tire {
-      color: $whiteColor;
+      color: $white-color;
    }
 }
 
 .btn-submit {
    width: 130px;
    height: 40px;
-   color: $whiteColor;
-   background-color: $mainColor;
+   color: $white-color;
+   background-color: $main-color;
    border-radius: 0;
    text-transform: uppercase;
    justify-content: space-around;
@@ -67,7 +68,7 @@
    @extend %link-style;
    &:hover,
    &:focus {
-      color: $whiteColor;
+      color: $white-color;
    }
 }
 
@@ -84,44 +85,12 @@
       transform: rotate(179deg);
    }
    .back-to-up {
-      color: $whiteColor;
-      font-size: $smallerSize;
+      color: $white-color;
+      font-size: $smaller-size;
       margin-left: 5px;
       text-decoration: underline;
       text-transform: capitalize;
    }
-}
-
-
-// animation scroll down and top
-
-.arrows path {
-	animation: arrow  2.5s  infinite;
-	-webkit-animation: arrow 2.5s infinite;
-}
-
-@keyframes arrow{
-   0% {
-      opacity: 0;
-   }
-   70% {
-      opacity: 1;
-   }
-   100% {
-      opacity: 0;
-   }
-}
-.arrow path.a1 {
-	animation-delay:0.5s;
-	-webkit-animation-delay:0.5s; /* Chrome */
-}
-.arrow path.a2 {
-	animation-delay:1s;
-	-webkit-animation-delay:1s; /* Chrome */
-}
-.arrow path.a3 {
-	animation-delay:1.5s;
-	-webkit-animation-delay:1.5s; /* Chrome */
 }
 
 .fp-slidesNav.fp-bottom {
@@ -142,6 +111,7 @@
       background-color: #BCBEC0;
    }
 }
+
 .fp-slidesNav ul li {
    min-width: 84px;
    text-align: center;
@@ -174,7 +144,7 @@
 }
 
 .fp-slidesNav ul li a.active::before {
-   color: $mainColor;
+   color: $main-color;
 }
 
 .fp-slidesNav ul li a span {
@@ -195,7 +165,7 @@
    width: 76px;
    height: 2px;
    top: 32px;
-   background: $mainColor;
+   background: $main-color;
 }
 
 #fp-nav.fp-right {
@@ -204,8 +174,101 @@
 
 #fp-nav ul li a.active span,
 #fp-nav ul li:hover a.active span{
-   background-color: $whiteColor;
-   border:2px solid $blackColor;
+   background-color: $white-color;
+   border:2px solid $black-color;
    // width: 10px;
    // height: 10px;
+}
+
+// animation scroll down
+.arrows path {
+	animation: arrow  2.5s  infinite;
+	-webkit-animation: arrow 2.5s infinite;
+}
+@keyframes arrow{
+   0% {
+      opacity: 0;
+   }
+   70% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+.arrow path.a1 {
+	animation-delay:0.5s;
+	-webkit-animation-delay:0.5s;
+}
+.arrow path.a2 {
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+.arrow path.a3 {
+	animation-delay:1.5s;
+	-webkit-animation-delay:1.5s;
+}
+
+// animation scroll top
+.arrows-back path {
+	animation: arrowsback  2.5s  infinite;
+	-webkit-animation: arrowsback 2.5s infinite;
+}
+@keyframes arrowsback{
+   0% {
+      opacity: 1;
+   }
+   70% {
+      opacity: 0.1;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+.arrows-back path.b1 {
+	animation-delay: 1.4s;
+	-webkit-animation-delay: 1.4s;
+}
+.arrows-back path.b2 {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+.arrows-back path.b3 {
+	animation-delay:0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+
+.tire-size-container {
+   &:hover {
+      // animation scroll top
+      .arrows-right path {
+         animation: arrowsright  1.8s  infinite;
+         -webkit-animation: arrowsright 1.8s infinite;
+      }
+      .arrows-right path.path1 {
+         animation-delay: 1s;
+         -webkit-animation-delay: 1s;
+      }
+      .arrows-right path.path2 {
+         animation-delay: 0.5s;
+         -webkit-animation-delay: 0.5s;
+      }
+      .arrows-right path.path3 {
+         animation-delay:0s;
+         -webkit-animation-delay: 0s;
+      }
+
+   }
+}
+
+@keyframes arrowsright{
+   0% {
+      opacity: 1;
+   }
+   70% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
 }

@@ -1,54 +1,55 @@
-// Variable definition navbar select
-// let navMenu = document.querySelector("ul.navbar-nav");
+/*
+   *Variable definition navbar select
+   let navMenu = document.querySelector("ul.navbar-nav");
 
-//  Function that Hides top navigation on scroll down To Second Section.
-// const hiddenNav = () => {
-//    window.scrollY > 799 ?
-//       navMenu.classList.add("hide") :
-//       navMenu.classList.remove("hide")
-// }
-// window.addEventListener('scroll', hiddenNav);
+   Function that Hides top navigation on scroll down To Second Section.
+   const hiddenNav = () => {
+      window.scrollY > 799 ?
+         navMenu.classList.add("hide") :
+         navMenu.classList.remove("hide")
+   }
+   window.addEventListener('scroll', hiddenNav);
 
-// Add active class to the current item (highlight it)
+   Add active class to the current item (highlight it)
 
-// Variables definition scrolling top and down
+   *Variables definition scrolling top and down
 
-// Variable definition change class
-// let items = document.querySelector(".my-item");
-// let links = items.getElementsByClassName("link-active");
-// let markerModel = document.querySelector(".marker-logo");
-// let checkItemActive = items.getElementsByClassName(".");
+   Variable definition change class
+   let items = document.querySelector(".my-item");
+   let links = items.getElementsByClassName("link-active");
+   let markerModel = document.querySelector(".marker-logo");
+   let checkItemActive = items.getElementsByClassName(".");
 
-// for (let i = 0; i < links.length; i++) {
-   //    links[i].addEventListener("click", function() {
-      //    let current = document.getElementsByClassName("active");
-      //    if (current.length > 0) {
-         //       current[0].className = current[0].className.replace("active", "");
-         //    }
-         //   this.className += " active";
-         //   });
-         // }
+   for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function() {
+         let current = document.getElementsByClassName("active");
+         if (current.length > 0) {
+            current[0].className = current[0].className.replace("active", "");
+            }
+            this.className += " active";
+            });
+         }
 
+         document.addEventListener("click", function(e) {
+            for (let x = 0;x < navbarLink.length;x++) {
+               navbarLink[x].classList.remove("active")
+            }
+            e.target.closest(".link-active").classList.add("active")
+            }
+         })
 
+   let navbarLink = document.querySelectorAll(".link-active")
+   const addActivceClass = (e) => {
+      for (let x = 0;x < navbarLink.length;x++) {
+         navbarLink[x].classList.remove("active")
+      }
+      e.target.closest("li").classList.add("active")
+   }
+   document.addEventListener("click", addActivceClass)
+*/
 
-         // document.addEventListener("click", function(e) {
-            //    for (let x = 0;x < navbarLink.length;x++) {
-               //    navbarLink[x].classList.remove("active")
-               //    }
-               //    e.target.closest(".link-active").classList.add("active")
-               // })
+//*Variables definition
 
-// let navbarLink = document.querySelectorAll(".link-active")
-// const addActivceClass = (e) => {
-//    for (let x = 0;x < navbarLink.length;x++) {
-//       navbarLink[x].classList.remove("active")
-//       }
-//       e.target.closest("li").classList.add("active")
-// }
-
-// document.addEventListener("click", addActivceClass)
-
-// Variables definition
 let scrollTop = document.querySelector(".btn-back-up");
 //Function that scroll Top
 const btnScrollTop = () => {
@@ -59,15 +60,16 @@ const btnScrollTop = () => {
 }
 scrollTop.addEventListener('click', btnScrollTop);
 
+//*active item
 
-// active item
 var itemIsActive = '.link-active';
 $(itemIsActive).on('click', function(){
     $(itemIsActive).removeClass('active');
     $(this).addClass('active');
 });
 
-// select2 drowpdown function
+//*select2 drowpdown function
+
 $(document).ready(function () {
    $("#marker").select2({
       dropdownParent: $('#myModal'),
@@ -91,18 +93,19 @@ $(document).ready(function () {
    });
 });
 
-// sport ultra curosel function
+//*sport ultra curosel function
+
 let thumbnails = document.getElementById("thumbnails")
 let imgs = thumbnails.getElementsByClassName('img-slider')
 let main = document.getElementById("main")
-
 let counter = 0;
+
 function changeSilder () {
    for(let i = 0; i < imgs.length; i++){
       let img = imgs[i];
       img.addEventListener("click", function () {
          main.src=this.src;
       })
-      }
    }
+}
 changeSilder()

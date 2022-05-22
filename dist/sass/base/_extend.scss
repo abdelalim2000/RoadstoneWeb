@@ -3,7 +3,7 @@
    // color: inherit;
    &:focus,
    &:hover {
-      color: $whiteColor;
+      color: $white-color;
       box-shadow: none;
    }
 }
@@ -26,7 +26,7 @@
    border-radius: 1px;
    width: 183px;
    height: 40px;
-   font-size: $xSmallSize;
+   font-size: $xsmall-size;
    text-transform: uppercase;
    opacity: .9;
    font-weight: $light;
@@ -50,37 +50,37 @@
 
 %heading-section-style {
    font-weight: $black;
-   font-size: $largSize;
+   font-size: $primary-larg-size;
    line-height: 40px;
    text-transform: uppercase;
    text-align: center;
 }
 
 .menu-link-style{
-   color: $grayColor;
-   font-size: $xSmallSize;
-   font-weight: $largerSize;
+   color: $gray-color;
+   font-size: $xsmall-size;
+   font-weight: $larg-size;
    opacity: .8;
    text-transform: capitalize;
 }
 
 %footer-copy-right {
-   color: $grayColor;
-   font-size: $smallerSize;
+   color: $gray-color;
+   font-size: $smaller-size;
    opacity: .8;
 }
 
 .menu-heading-style {
-   color: $whiteColor;
-   font-size: $xSmallSize;
+   color: $white-color;
+   font-size: $xsmall-size;
    font-weight: $light;
    text-transform: uppercase;
 }
 
 .sidebar-menu-desc {
-   color: $grayColor;
+   color: $gray-color;
    opacity: 0.5;
-   font-size: $smallerSize;
+   font-size: $smaller-size;
    font-weight: $light;
    text-transform: capitalize;
 }
@@ -91,23 +91,23 @@
 }
 
 %smallBoldFont-txtCapitalize {
-   font-size: $smallerSize;
+   font-size: $smaller-size;
    font-weight: $bold;
    text-transform: capitalize;
 }
 
 %tire-size-heading {
-   font-size: $smallSize;
+   font-size: $small-size;
    font-weight: $black;
    line-height: 38px;
-   color: $whiteColor;
+   color: $white-color;
 }
 
 %tire-size-desc {
-   font-size: $smallerSize;
+   font-size: $smaller-size;
    font-weight: $normal;
    line-height: 17px;
-   color: $whiteColor;
+   color: $white-color;
    opacity: .8;
 }
 
@@ -118,15 +118,15 @@
 }
 
 %font-color-transform {
-   font-size: $largSize;
+   font-size: $primary-larg-size;
    line-height: 40px;
-   color: $whiteColor;
+   color: $white-color;
    font-weight: $black;
    text-transform: uppercase;
 }
 
 %load-more {
-     background-color: $mainColor;
+     background-color: $main-color;
          border: 0;
          text-transform: uppercase;
 }
@@ -134,5 +134,5 @@
 %font-color {
    font-size: 18px;
    font-weight: $bold;
-   color: $whiteColor;
+   color: $white-color;
 }

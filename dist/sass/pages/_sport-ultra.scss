@@ -3,6 +3,7 @@
       color: $primary-dark !important
    }
 }
+
 .sportUltra-main {
    padding-top: 100px;
    .products {
@@ -10,14 +11,14 @@
          padding-top: 40px;
          .products-performance-content {
             .products-heading {
-               font-size: $largSize;
+               font-size: $primary-larg-size;
                line-height: 58px;
                padding-top: 50px;
-               color: $mainColor;
+               color: $main-color;
                @extend %font-transform;
             }
             .products-desc {
-               font-size: $xSmallSize;
+               font-size: $xsmall-size;
                color: $dark-gray;
                line-height: 20px;
                padding-top: 15px;
@@ -45,7 +46,7 @@
             width: 395px;
             padding-bottom: 30px;
             margin-left: auto;
-            background-color: $whiteColor;
+            background-color: $white-color;
             border-radius: 20px;
             .img-display {
                max-width: 281px;
@@ -83,10 +84,10 @@
          }
       }
       .per-indicator {
-         background: $whiteColor;
+         background: $white-color;
          padding: 90px;
          .per-indicator-title {
-            font-size: $largSize;
+            font-size: $primary-larg-size;
             font-weight: $black;
             line-height: 58px;
             color: #181818;
@@ -104,7 +105,7 @@
                .progress-bar {
                   height: 10px;
                   border-radius: 30px;
-                  background-color: $mainColor;
+                  background-color: $main-color;
                }
             }
          }
@@ -121,8 +122,8 @@
          text-align: center;
          thead {
             td {
-               background-color: $mainColor;
-               color: $grayColor;
+               background-color: $main-color;
+               color: $gray-color;
                font-size: 18px;
                padding: 15px 0;
             }

@@ -6,11 +6,10 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-   //  box-shadow: 0 0 0 20px $dark-gray inset !important;
     display: none;
 }
 body::-webkit-scrollbar-track {
-	background-color: $grayColor;
+	background-color: $gray-color;
 }
 
 body::-webkit-scrollbar {
@@ -24,7 +23,6 @@ body::-webkit-scrollbar-thumb {
 	background-color: $primary-dark;
 }
 
-
 .px-7 {
    padding-right: 5rem;
    padding-left: 5rem;
@@ -34,37 +32,44 @@ body::-webkit-scrollbar-thumb {
    padding-top: 3.4rem;
    padding-bottom: 3.4rem;
 }
+
 .me-9 {
    margin-right: 13rem;
    width: 100%;
    max-width: 100%;
 }
+
 .mt-6 {
   margin-top: 6rem;
 }
+
 .mt-7{
    margin-top: 6.5rem;
 }
+
 .mb-7 {
    margin-bottom: 4rem;
 }
+
 .sub-heading-color{
-   color: $mainColor;
+   color: $main-color;
 }
+
 .section-main-heading {
    @extend %heading-section-style
 }
+
 .hr-line {
-   color: $grayColor;
+   color: $gray-color;
    margin-top: 10px;
    margin-bottom: 10px;
 }
 
 .breadcrumb {
    .breadcrumb-item {
-      font-size: $smallerSize;
+      font-size: $smaller-size;
       .breadcrumb-link {
-         color: $mainColor;
+         color: $main-color;
       }
    }
 }
@@ -86,6 +91,7 @@ body::-webkit-scrollbar-thumb {
       @extend .sidebar-menu-desc;
    }
 }
+
 .email-address {
    .email-address-title {
       @extend .menu-heading-style;
@@ -94,3 +100,12 @@ body::-webkit-scrollbar-thumb {
       @extend .sidebar-menu-desc;
    }
 }
+
+.link-active {
+   color: #cdcdcd;
+ }
+
+ /* Style the active class */
+ .active, .link-active:hover {
+   color: $white-color !important;
+ }

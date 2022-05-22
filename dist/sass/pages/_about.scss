@@ -19,13 +19,13 @@ header {
       }
    }
    .about-heading {
-      font-size: $largerSize;
+      font-size: $larg-size;
       line-height: 80px;
       font-weight: $black;
-      color: $whiteColor;
+      color: $white-color;
       text-transform: uppercase;
       @media screen and (max-width: 767.98px) {
-         font-size: $largSize;
+         font-size: $primary-larg-size;
          line-height: 40px;
       }
    }
@@ -48,7 +48,7 @@ header {
    }
    .artical-item {
       .about-desc {
-         font-size: $xSmallSize;
+         font-size: $xsmall-size;
          line-height: 20px;
          color: $mute-color;
          width: 75%;
@@ -78,14 +78,14 @@ header {
             font-size: 32px;
             font-weight: $black;
             line-height: 40px;
-            color: $whiteColor;
+            color: $white-color;
             text-transform: uppercase;
             @media screen and (max-width: 424.98px) {
                font-size: 24px;
             }
          }
          .about-desc-roadstone {
-            font-size: $xSmallSize;
+            font-size: $xsmall-size;
             line-height: 20px;
             color: $mute-color;
             padding-right: 14px;

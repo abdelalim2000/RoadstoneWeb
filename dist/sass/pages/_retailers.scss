@@ -1,6 +1,6 @@
 .retailers-header {
    .retailers-header-bg {
-      background: url("../imgs/bolg-header.png") bottom no-repeat;
+      background: url("../imgs/blog-header.png") bottom no-repeat;
       background-size: cover;
       min-height: 300px;
       @media screen and (max-width: 768.98px) {
@@ -45,7 +45,7 @@
                   .findStore-link {
                      @extend %link-style;
                      .btn-findStore {
-                        color: $whiteColor;
+                        color: $white-color;
                         font-size: 10px;
                         text-transform: uppercase;
                      }
@@ -57,18 +57,6 @@
             }
             .city-link {
                margin: 10px 18px;
-               &:hover {
-                  border-radius: 10px;
-                  box-shadow: 0px 0px 11px 0px hsla(358, 85%, 52%, 0.82);
-                  @include transisionElement(.5s box-shadow);
-               }
-            }
-            .nav-pills {
-               .active {
-                  @include transisionElement(.5s box-shadow);
-                  box-shadow: 0px 0px 11px 0px hsla(358, 85%, 52%, 0.82);
-                  border-radius: 10px;
-               }
             }
          }
       }
@@ -95,13 +83,19 @@
             }
          }
          .nav-pills  {
-            .nav-link.active,
-            .nav-pills .show>.nav-link {
+            .nav-link.active {
                background-color: transparent;
-               border-radius: 5px 40px 6px 30px;
-               box-shadow: 0px 0px 7px 0px #fbfbfbd4;
-               @include transisionElement(box-shadow .8s );
+               outline: 1px solid #ffffff38;
+               border-radius: 6px;
             }
+         }
+      }
+      .nav-link {
+         color: transparent;
+         transition: all 0s;
+         @include transisionElement(transform .4s);
+         &:hover {
+            transform: scale(1.05);
          }
       }
    }
