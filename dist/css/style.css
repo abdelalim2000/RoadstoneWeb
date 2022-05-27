@@ -545,7 +545,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 768.98px) {
   .nav-container .side-nav {
-    height: 168px;
+    height: 190px;
     width: 63px;
     position: fixed;
     top: 146px;
@@ -614,7 +614,21 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 768.98px) {
   .nav-container .side-nav .side-nav-content .hr-line {
-    display: none;
+    margin: 10px 0 0;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .nav-container .side-nav .hr-whats {
+    position: relative;
+  }
+  .nav-container .side-nav .hr-whats::before {
+    content: "";
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    top: 126px;
   }
 }
 .nav-container .side-nav .contact {
@@ -1036,6 +1050,16 @@ form .wrong-text {
 .modal-dialog .modal-content {
   min-height: 70vh;
 }
+@media screen and (max-width: 424.97px) {
+  .modal-dialog {
+    min-width: 320px;
+  }
+}
+@media screen and (min-width: 424.98px) and (max-width: 991.98px) {
+  .modal-dialog {
+    min-width: 400px;
+  }
+}
 
 .modal-body .nav-tabs {
   border: 0;
@@ -1125,6 +1149,11 @@ form .wrong-text {
   width: 130px;
   height: 43px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 424.97px) {
+  .modal-footer button {
+    width: 100px !important;
+  }
 }
 
 .marker-logo-selector .form-check-label.link-active {

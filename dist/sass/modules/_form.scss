@@ -113,6 +113,12 @@ form {
    .modal-content {
       min-height: 70vh;
    }
+   @media screen and (max-width: 424.97px){
+      min-width: 320px;
+      }
+   @media screen and (min-width: 424.98px) and (max-width: 991.98px){
+   min-width: 400px;
+   }
 }
 .modal-body {
    .nav-tabs {
@@ -213,6 +219,11 @@ form {
       width: 130px;
       height: 43px;
       text-transform: uppercase;
+   }
+   @media screen and (max-width: 424.97px){
+      button {
+         width: 100px !important;
+      }
    }
 }
 
